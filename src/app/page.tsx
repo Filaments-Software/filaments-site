@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FilamentCard } from "./_components/FilamentCard";
 
 export default async function Home() {
@@ -41,7 +42,7 @@ export default async function Home() {
         
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-20">
-          <a href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image 
               src="/images/filaments-logo.png"
               alt="Filaments Logo"
@@ -50,7 +51,7 @@ export default async function Home() {
               priority
             />
             <span className="text-xl font-bold text-white">Filaments</span>
-          </a>
+          </Link>
           <nav>
             <ul className="flex gap-6 text-white">
               <li>
@@ -87,7 +88,7 @@ export default async function Home() {
                 className="h-auto"
               />
             </div>
-            <p className="text-lg md:text-xl text-blue-300 font-semibold mb-4">"Don't copy; Iterate"</p>
+            <p className="text-lg md:text-xl text-blue-300 font-semibold mb-4">&quot;Don&apos;t copy; Iterate&quot;</p>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
               Creating unforgettable gaming experiences,<br />
               one filament at a time.

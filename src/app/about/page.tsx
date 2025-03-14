@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata = {
   title: "About Filaments Software",
@@ -14,7 +15,7 @@ export default function AboutPage() {
         
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10 mb-16">
-          <a href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image 
               src="/images/filaments-logo.png"
               alt="Filaments Logo"
@@ -23,7 +24,7 @@ export default function AboutPage() {
               priority
             />
             <span className="text-xl font-bold text-white">Filaments</span>
-          </a>
+          </Link>
           <nav>
             <ul className="flex gap-6 text-white">
               <li>
@@ -63,10 +64,10 @@ export default function AboutPage() {
             <span className="text-blue-400">Filaments</span>
           </h1>
           <p className="text-xl text-blue-300 font-semibold max-w-3xl mx-auto text-center mb-4">
-            "Don't copy; Iterate"
+            "Don&apos;t copy; Iterate"
           </p>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center">
-            We're a passionate indie game studio dedicated to creating games called filaments.
+            We&apos;re a passionate indie game studio dedicated to creating games called filaments.
           </p>
         </div>
       </section>
@@ -85,11 +86,11 @@ export default function AboutPage() {
               people, ideas, and emotions into a brilliant tapestry of experiences.
             </p>
             <p className="text-gray-300 mb-4">
-              The motto, "Don't copy; Iterate," embodies our approach to game development. We believe in learning 
+              The motto, "Don&apos;t copy; Iterate," embodies our approach to game development. We believe in learning 
               from what works, then innovating and evolving those ideas into something fresh and unique.
             </p>
             <p className="text-gray-300">
-              Based in the US, filaments' small but growing team is currently focused on developing a debut title "Limina" - 
+              Based in the US, filaments&apos; small but growing team is currently focused on developing a debut title "Limina" - 
               an immersive liminal exploration game built on the S&Box Engine that draws inspiration from 
               the unsettling spaces of the Backrooms and the mysterious lore from the SCP universe.
             </p>
@@ -116,7 +117,7 @@ export default function AboutPage() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2">Iteration</h3>
-              <p className="text-gray-300">We don't reinvent the wheel; we make it better. Taking what works and evolving it into something new and meaningful.</p>
+              <p className="text-gray-300">We don&apos;t reinvent the wheel; we make it better. Taking what works and evolving it into something new and meaningful.</p>
             </div>
             <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl text-center">
               <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -151,7 +152,7 @@ export default function AboutPage() {
                   name: "Arcev",
                   role: "Founder",
                   image: "/images/team-1.jpg",
-                  bio: "Just a 25-year-old guy who loves to create games and explore new ideas. I'm passionate about storytelling and game design.",
+                  bio: "Just a 25-year-old guy who loves to create games and explore new ideas. I&apos;m passionate about storytelling and game design.",
                 }
               ].map(member => (
                 <div key={member.name} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden">
@@ -186,10 +187,10 @@ export default function AboutPage() {
                 <p className="text-gray-300 mb-4">
                   An immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. 
                   Built on the S&Box Engine, Limina invites players to navigate through uncanny spaces 
-                  where reality's boundaries blur.
+                  where reality&apos;s boundaries blur.
                 </p>
                 <p className="text-gray-300">
-                  Currently in active development, we're excited to share more details about Limina in the coming months.
+                  Currently in active development, we&apos;re excited to share more details about Limina in the coming months.
                 </p>
               </div>
               <div className="rounded-lg overflow-hidden">
