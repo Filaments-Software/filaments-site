@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense, lazy } from "react";
 
+
 // Lazy load below-the-fold components
 const FilamentCard = lazy(() => import("./_components/FilamentCard").then(mod => ({ default: mod.FilamentCard })));
 
