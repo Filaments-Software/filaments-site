@@ -1,0 +1,210 @@
+import Image from "next/image";
+
+export const metadata = {
+  title: "About Filaments Software",
+  description: "Learn about our game studio, our mission, and the team behind Limina",
+};
+
+export default function AboutPage() {
+  return (
+    <div className="bg-gradient-to-b from-[#071e3d] to-[#0f172a] text-white min-h-screen">
+      {/* Hero Section with Integrated Navigation */}
+      <section className="relative pt-4 pb-20">
+        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center z-0 opacity-20"></div>
+        
+        {/* Navigation integrated at top */}
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10 mb-16">
+          <a href="/" className="flex items-center gap-3">
+            <Image 
+              src="/images/filaments-logo.png"
+              alt="Filaments Logo"
+              width={40}
+              height={40}
+              priority
+            />
+            <span className="text-xl font-bold text-white">Filaments</span>
+          </a>
+          <nav>
+            <ul className="flex gap-6 text-white">
+              <li>
+                <a href="/about" className="hover:text-blue-400 transition flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/#game-details" className="hover:text-blue-400 transition flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Games
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+        {/* Hero content */}
+        <div className="container mx-auto px-4 relative z-10">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center flex items-center justify-center flex-wrap">
+            About 
+            <span className="inline-block mx-3">
+              <Image 
+                src="/images/filaments-logo.png"
+                alt="Filaments Logo"
+                width={50}
+                height={50}
+                className="h-auto"
+              />
+            </span>
+            <span className="text-blue-400">Filaments</span>
+          </h1>
+          <p className="text-xl text-blue-300 font-semibold max-w-3xl mx-auto text-center mb-4">
+            "Don't copy; Iterate"
+          </p>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center">
+            We're a passionate indie game studio dedicated to creating games called filaments.
+          </p>
+        </div>
+      </section>
+
+      {/* Our Story */}
+      <section className="py-20 bg-[#0f172a]">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6 text-center">The Story</h2>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-gray-300 mb-4">
+              Filaments Software is founded by people who share a common vision: 
+              to make intriging experiences that are fused with innovative gameplay mechanics.
+            </p>
+            <p className="text-gray-300 mb-4">
+              The name "Filaments" represents the philosophy—that games are like threads of light that connect 
+              people, ideas, and emotions into a brilliant tapestry of experiences.
+            </p>
+            <p className="text-gray-300 mb-4">
+              The motto, "Don't copy; Iterate," embodies our approach to game development. We believe in learning 
+              from what works, then innovating and evolving those ideas into something fresh and unique.
+            </p>
+            <p className="text-gray-300">
+              Based in the US, filaments' small but growing team is currently focused on developing a debut title "Limina" - 
+              an immersive liminal exploration game built on the S&Box Engine that draws inspiration from 
+              the unsettling spaces of the Backrooms and the mysterious lore from the SCP universe.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Mission */}
+      <section className="py-20 bg-gradient-to-b from-[#0f172a] to-[#1e3a8a]">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold mb-10 text-center">The Mission</h2>
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10">
+            <p className="text-xl text-center text-gray-300">
+              "To create games that build upon the foundations laid by others, iterating and evolving 
+              ideas rather than simply copying them—transforming inspiration into innovation, 
+              one filament at a time."
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Iteration</h3>
+              <p className="text-gray-300">We don't reinvent the wheel; we make it better. Taking what works and evolving it into something new and meaningful.</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Connection</h3>
+              <p className="text-gray-300">Bringing players and ideas together to create a collaborative ecosystem where innovation thrives through shared experiences.</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl text-center">
+              <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold mb-2">Originality</h3>
+              <p className="text-gray-300">Finding the balance between inspiration and imitation—respecting what came before while creating something distinctly our own.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Members */}
+      <section className="py-20 bg-[#1e3a8a]">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-16 text-center">The Team</h2>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-md">
+              {[
+                {
+                  name: "Arcev",
+                  role: "Founder",
+                  image: "/images/team-1.jpg",
+                  bio: "Just a 25-year-old guy who loves to create games and explore new ideas. I'm passionate about storytelling and game design.",
+                }
+              ].map(member => (
+                <div key={member.name} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden">
+                  <div className="relative h-64">
+                    <Image 
+                      src={member.image} 
+                      alt={member.name}
+                      fill
+                      style={{ objectFit: "cover" }}
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-white">{member.name}</h3>
+                    <p className="text-blue-400 mb-2">{member.role}</p>
+                    <p className="text-gray-300">{member.bio}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Current Project */}
+      <section className="py-20 bg-gradient-to-b from-[#1e3a8a] to-[#071e3d]">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-bold mb-10 text-center">Current Projects</h2>
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10 shadow-xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-4">Limina</h3>
+                <p className="text-gray-300 mb-4">
+                  An immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. 
+                  Built on the S&Box Engine, Limina invites players to navigate through uncanny spaces 
+                  where reality's boundaries blur.
+                </p>
+                <p className="text-gray-300">
+                  Currently in active development, we're excited to share more details about Limina in the coming months.
+                </p>
+              </div>
+              <div className="rounded-lg overflow-hidden">
+                <Image 
+                  src="/images/limina.png" 
+                  alt="Limina - Our debut game" 
+                  width={500} 
+                  height={300} 
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

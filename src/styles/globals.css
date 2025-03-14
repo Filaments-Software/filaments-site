@@ -1,3 +1,13 @@
+@import "./video-background.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Make sure Montserrat applies to all text by default */
+@layer base {
+  html {
+    font-family: var(--font-montserrat), system-ui, sans-serif;
+  }
+}
+
+/* Rest of your existing CSS */
