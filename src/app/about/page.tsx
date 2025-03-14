@@ -8,11 +8,9 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="text-white">
+    <div className="text-white bg-gradient-to-b from-[#071e3d] via-[#0f172a] via-[#152d5f] via-[#1e3a8a] via-[#152d5f] to-[#071e3d]">
       {/* Hero Section with Integrated Navigation */}
-      <section className="relative pt-4 pb-20 bg-gradient-to-b from-[#071e3d] to-[#0f172a]">
-        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center z-0 opacity-20"></div>
-        
+      <section className="relative pt-4 pb-10">
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10 mb-16">
           <Link href="/" className="flex items-center gap-3">
@@ -72,8 +70,13 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Divider design element - connects sections */}
+      <div className="flex justify-center my-8">
+        <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+      </div>
+
       {/* Our Story */}
-      <section className="py-20 bg-[#0f172a]">
+      <section className="py-10">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6 text-center">The Story</h2>
           <div className="max-w-3xl mx-auto text-center">
@@ -98,8 +101,13 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Divider design element - connects sections */}
+      <div className="flex justify-center my-8">
+        <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+      </div>
+
       {/* Our Mission */}
-      <section className="py-20 bg-gradient-to-b from-[#0f172a] via-[#152d5f] to-[#1e3a8a]">
+      <section className="py-10">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold mb-10 text-center">The Mission</h2>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10">
@@ -141,8 +149,13 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Divider design element - connects sections */}
+      <div className="flex justify-center my-8">
+        <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+      </div>
+
       {/* Team Members */}
-      <section className="py-20 bg-[#1e3a8a]">
+      <section className="py-10">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-16 text-center">The Team</h2>
           <div className="flex justify-center">
@@ -182,8 +195,13 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Divider design element - connects sections */}
+      <div className="flex justify-center my-8">
+        <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
+      </div>
+
       {/* Current Project */}
-      <section className="py-20 bg-gradient-to-b from-[#1e3a8a] via-[#152d5f] to-[#071e3d]">
+      <section className="py-10 pb-20">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold mb-10 text-center">Current Projects</h2>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10 shadow-xl">

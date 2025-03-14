@@ -17,7 +17,7 @@ export default async function Home() {
   ];
 
   return (
-    <div className="relative">
+    <div className="relative bg-gradient-to-b from-[#1e3a8a] via-[#12315a] to-[#0f172a]">
       {/* Hero Section with Integrated Navigation */}
       <section className="h-screen relative flex flex-col overflow-hidden">
         {/* Video Background */}
@@ -27,7 +27,7 @@ export default async function Home() {
             loop
             muted
             playsInline
-            className="absolute h-full w-full object-cover"
+            className="absolute h-full w-full object-cover filter blur-[2px]"
           >
             <source src="/videos/background.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -36,9 +36,8 @@ export default async function Home() {
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         
-        {/* Gradient overlay on top of video */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#071e3d]/70 via-[#0f172a]/60 to-[#1e3a8a] z-5"></div>
-        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center z-10 opacity-20"></div>
+        {/* Header gradient overlay - only over the header area */}
+        <div className="absolute top-0 inset-x-0 h-[72px] bg-gradient-to-b from-[#071e3d]/90 to-transparent z-5"></div>
         
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-20">
@@ -121,7 +120,6 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20">
           <svg className="animate-bounce w-10 h-10 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -130,7 +128,7 @@ export default async function Home() {
       </section>
 
       {/* Game Details Section */}
-      <section id="game-details" className="py-20 bg-gradient-to-b from-[#1e3a8a] via-[#12315a] to-[#0f172a]">
+      <section id="game-details" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-white mb-16">Introducing Limina</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
