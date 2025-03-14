@@ -28,12 +28,12 @@ export default function AboutPage() {
           <nav>
             <ul className="flex gap-6 text-white">
               <li>
-                <a href="/about" className="hover:text-blue-400 transition flex items-center gap-2">
+                <Link href="/about" className="hover:text-blue-400 transition flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/#game-details" className="hover:text-blue-400 transition flex items-center gap-2">
@@ -64,7 +64,7 @@ export default function AboutPage() {
             <span className="text-blue-400">Filaments</span>
           </h1>
           <p className="text-xl text-blue-300 font-semibold max-w-3xl mx-auto text-center mb-4">
-            "Don&apos;t copy; Iterate"
+            &quot;Don&apos;t copy; Iterate&quot;
           </p>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center">
             We&apos;re a passionate indie game studio dedicated to creating games called filaments.
@@ -82,15 +82,15 @@ export default function AboutPage() {
               to make intriging experiences that are fused with innovative gameplay mechanics.
             </p>
             <p className="text-gray-300 mb-4">
-              The name "Filaments" represents the philosophy—that games are like threads of light that connect 
+              The name &quot;Filaments&quot; represents the philosophy—that games are like threads of light that connect 
               people, ideas, and emotions into a brilliant tapestry of experiences.
             </p>
             <p className="text-gray-300 mb-4">
-              The motto, "Don&apos;t copy; Iterate," embodies our approach to game development. We believe in learning 
+              The motto, &quot;Don&apos;t copy; Iterate,&quot; embodies our approach to game development. We believe in learning 
               from what works, then innovating and evolving those ideas into something fresh and unique.
             </p>
             <p className="text-gray-300">
-              Based in the US, filaments&apos; small but growing team is currently focused on developing a debut title "Limina" - 
+              Based in the US, filaments&apos; small but growing team is currently focused on developing a debut title &quot;Limina&quot; - 
               an immersive liminal exploration game built on the S&Box Engine that draws inspiration from 
               the unsettling spaces of the Backrooms and the mysterious lore from the SCP universe.
             </p>
@@ -104,9 +104,9 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-10 text-center">The Mission</h2>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10">
             <p className="text-xl text-center text-gray-300">
-              "To create games that build upon the foundations laid by others, iterating and evolving 
+              &quot;To create games that build upon the foundations laid by others, iterating and evolving 
               ideas rather than simply copying them—transforming inspiration into innovation, 
-              one filament at a time."
+              one filament at a time.&quot;
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
