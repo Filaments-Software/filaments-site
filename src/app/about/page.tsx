@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10 mb-16">
           <Link href="/" className="flex items-center gap-3">
             <Image 
-              src="/images/filaments-logo.png"
+              src="/images/filaments-logo.PNG"
               alt="Filaments Logo"
               width={40}
               height={40}
@@ -54,7 +54,7 @@ export default function AboutPage() {
             About 
             <span className="inline-block mx-3">
               <Image 
-                src="/images/filaments-logo.png"
+                src="/images/filaments-logo.PNG"
                 alt="Filaments Logo"
                 width={50}
                 height={50}
@@ -195,7 +195,7 @@ export default function AboutPage() {
               </div>
               <div className="rounded-lg overflow-hidden">
                 <Image 
-                  src="/images/limina.png" 
+                  src="/images/limina.PNG" 
                   alt="Limina - Our debut game" 
                   width={500} 
                   height={300} 

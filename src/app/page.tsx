@@ -10,7 +10,7 @@ export default async function Home() {
       ident: "limbox",
       title: "Limina",
       description: "Limina is an immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. Built on the S&Box Engine.",
-      image: "/images/limina.png",
+      image: "/images/limina.PNG",
       platforms: ["PC"],
       releaseStatus: "In Development"
     }
@@ -44,7 +44,7 @@ export default async function Home() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-20">
           <Link href="/" className="flex items-center gap-3">
             <Image 
-              src="/images/filaments-logo.png"
+              src="/images/filaments-logo.PNG"
               alt="Filaments Logo"
               width={40}
               height={40}
@@ -81,7 +81,7 @@ export default async function Home() {
           <div className="container mx-auto px-4 relative z-20 text-center">
             <div className="flex justify-center mb-6">
               <Image 
-                src="/images/filaments-logo-text.png"
+                src="/images/filaments-logo-text.PNG"
                 alt="Filaments Software"
                 width={500}
                 height={100}

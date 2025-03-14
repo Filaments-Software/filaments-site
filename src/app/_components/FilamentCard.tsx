@@ -21,9 +21,9 @@ export function FilamentCard({ game }: FilamentCardProps) {
         <Image 
           src={game.image} 
           alt={game.title}
-          fill
-          style={{ objectFit: "cover" }}
-          className="transition-transform duration-500 hover:scale-110"
+          width={800}
+          height={450}
+          className="rounded-t-xl w-full h-auto"
         />
         <div className="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
           {game.releaseStatus}
