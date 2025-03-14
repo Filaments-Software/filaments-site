@@ -157,7 +157,7 @@ export default function AboutPage() {
                 {
                   name: "You?",
                   role: "Join discord and reach out!",
-                  image: "/images/addperson.jpg",
+                  image: "/images/addperson.png",
                   bio: "Always on the look out for talented individuals to join our team. If you're passionate about game development, reach out. :D",
                 }
               ].map(member => (
