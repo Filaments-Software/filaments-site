@@ -49,6 +49,7 @@ export default async function Home() {
               width={40}
               height={40}
               priority
+              unoptimized={false} // Add this line
             />
             <span className="text-xl font-bold text-white">Filaments</span>
           </Link>
@@ -110,13 +111,16 @@ export default async function Home() {
                 </svg>
               </a>
               <a href="https://sbox.game/fss" className="hover:text-blue-400 transition" aria-label="S&Box">
-                <Image 
-                  src="/images/sbox.svg"
-                  alt="S&Box Logo"
-                  width={29}
-                  height={16}
-                  className="w-10 h-6.7 fill-current text-white hover:text-blue-400 transition"
-                />
+                <span className="text-white hover:text-blue-400 transition">
+                  <Image 
+                    src="/images/sbox.svg"
+                    alt="S&Box Logo"
+                    width={29}
+                    height={16}
+                    className="w-10 h-6.7 fill-current text-white hover:text-blue-400 transition"
+                    unoptimized={true} // SVGs work better unoptimized
+                  />
+                </span>
               </a>
             </div>
           </div>
