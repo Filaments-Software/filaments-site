@@ -17,19 +17,20 @@ interface FilamentCardProps {
 export function FilamentCard({ game }: FilamentCardProps) {
   return (
     <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-blue-500/20">
-      <div className="relative h-48">
+      <div className="relative h-48 overflow-hidden">
         <Image 
           src={game.image} 
           alt={game.title}
           width={800}
           height={450}
-          className="rounded-t-xl w-full h-auto"
+          className="rounded-t-xl w-full h-full object-cover"
+          priority
         />
-        <div className="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">
+        <div className="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded z-10">
           {game.releaseStatus}
         </div>
       </div>
-      <div className="p-6">
+      <div className="p-6 relative z-20 bg-white/5 backdrop-blur-sm">
         <h3 className="text-xl font-bold text-white mb-2">{game.title}</h3>
         <p className="text-gray-300 mb-4">{game.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">

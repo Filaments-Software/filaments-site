@@ -10,7 +10,7 @@ export default async function Home() {
       ident: "limbox",
       title: "Limina",
       description: "Limina is an immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. Built on the S&Box Engine.",
-      image: "/images/limina.PNG",
+      image: "/images/limina.png",
       platforms: ["PC"],
       releaseStatus: "In Development"
     }
@@ -37,19 +37,18 @@ export default async function Home() {
         </div>
         
         {/* Gradient overlay on top of video */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#071e3d]/70 to-[#1e3a8a]/70 z-5"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#071e3d]/70 via-[#0f172a]/60 to-[#1e3a8a] z-5"></div>
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center z-10 opacity-20"></div>
         
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-20">
           <Link href="/" className="flex items-center gap-3">
             <Image 
-              src="/images/filaments-logo.PNG"
+              src="/images/filaments-logo.png"
               alt="Filaments Logo"
               width={40}
               height={40}
               priority
-              unoptimized={false} // Add this line
             />
             <span className="text-xl font-bold text-white">Filaments</span>
           </Link>
@@ -81,7 +80,7 @@ export default async function Home() {
           <div className="container mx-auto px-4 relative z-20 text-center">
             <div className="flex justify-center mb-6">
               <Image 
-                src="/images/filaments-logo-text.PNG"
+                src="/images/filaments-logo-text.png"
                 alt="Filaments Software"
                 width={500}
                 height={100}
@@ -111,16 +110,13 @@ export default async function Home() {
                 </svg>
               </a>
               <a href="https://sbox.game/fss" className="hover:text-blue-400 transition" aria-label="S&Box">
-                <span className="text-white hover:text-blue-400 transition">
-                  <Image 
-                    src="/images/sbox.svg"
-                    alt="S&Box Logo"
-                    width={29}
-                    height={16}
-                    className="w-10 h-6.7 fill-current text-white hover:text-blue-400 transition"
-                    unoptimized={true} // SVGs work better unoptimized
-                  />
-                </span>
+                <Image 
+                  src="/images/sbox.svg"
+                  alt="S&Box Logo"
+                  width={29}
+                  height={16}
+                  className="w-10 h-6.7 fill-current text-white hover:text-blue-400 transition"
+                />
               </a>
             </div>
           </div>
@@ -134,7 +130,7 @@ export default async function Home() {
       </section>
 
       {/* Game Details Section */}
-      <section id="game-details" className="py-20 bg-gradient-to-b from-[#1e3a8a] to-[#0f172a]">
+      <section id="game-details" className="py-20 bg-gradient-to-b from-[#1e3a8a] via-[#12315a] to-[#0f172a]">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-white mb-16">Introducing Limina</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-2xl mx-auto">

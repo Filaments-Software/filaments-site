@@ -8,16 +8,16 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="bg-gradient-to-b from-[#071e3d] to-[#0f172a] text-white min-h-screen">
+    <div className="text-white">
       {/* Hero Section with Integrated Navigation */}
-      <section className="relative pt-4 pb-20">
+      <section className="relative pt-4 pb-20 bg-gradient-to-b from-[#071e3d] to-[#0f172a]">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center z-0 opacity-20"></div>
         
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10 mb-16">
           <Link href="/" className="flex items-center gap-3">
             <Image 
-              src="/images/filaments-logo.PNG"
+              src="/images/filaments-logo.png"
               alt="Filaments Logo"
               width={40}
               height={40}
@@ -36,13 +36,13 @@ export default function AboutPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/#game-details" className="hover:text-blue-400 transition flex items-center gap-2">
+                <a href="/#game-details" className="hover:text-blue-400 transition flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   Games
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
@@ -54,7 +54,7 @@ export default function AboutPage() {
             About 
             <span className="inline-block mx-3">
               <Image 
-                src="/images/filaments-logo.PNG"
+                src="/images/filaments-logo.png"
                 alt="Filaments Logo"
                 width={50}
                 height={50}
@@ -99,7 +99,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Mission */}
-      <section className="py-20 bg-gradient-to-b from-[#0f172a] to-[#1e3a8a]">
+      <section className="py-20 bg-gradient-to-b from-[#0f172a] via-[#152d5f] to-[#1e3a8a]">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold mb-10 text-center">The Mission</h2>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10">
@@ -177,7 +177,7 @@ export default function AboutPage() {
       </section>
 
       {/* Current Project */}
-      <section className="py-20 bg-gradient-to-b from-[#1e3a8a] to-[#071e3d]">
+      <section className="py-20 bg-gradient-to-b from-[#1e3a8a] via-[#152d5f] to-[#071e3d]">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold mb-10 text-center">Current Projects</h2>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10 shadow-xl">
@@ -195,7 +195,7 @@ export default function AboutPage() {
               </div>
               <div className="rounded-lg overflow-hidden">
                 <Image 
-                  src="/images/limina.PNG" 
+                  src="/images/limina.png" 
                   alt="Limina - Our debut game" 
                   width={500} 
                   height={300} 
