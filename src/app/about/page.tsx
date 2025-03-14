@@ -152,7 +152,7 @@ export default function AboutPage() {
                   name: "Arcev",
                   role: "Founder",
                   image: "/images/team-1.jpg",
-                  bio: "Just a 25-year-old guy who loves to create games and explore new ideas. I&apos;m passionate about storytelling and game design.",
+                  bio: "Just a 25-year-old guy who loves to create games and explore new ideas. Im passionate about storytelling and game design.",
                 }
               ].map(member => (
                 <div key={member.name} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden">
