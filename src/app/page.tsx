@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FilamentCard } from "./_components/FilamentCard";
+import { Suspense, lazy } from "react";
+
+// Lazy load below-the-fold components
+const FilamentCard = lazy(() => import("./_components/FilamentCard").then(mod => ({ default: mod.FilamentCard })));
 
 export default async function Home() {
   // Single game in development
@@ -20,17 +23,18 @@ export default async function Home() {
     <div className="relative bg-gradient-to-b from-[#1e3a8a] via-[#12315a] to-[#0f172a]">
       {/* Hero Section with Integrated Navigation */}
       <section className="h-screen relative flex flex-col overflow-hidden">
-        {/* Video Background */}
+        {/* Video Background with proper loading */}
         <div className="absolute inset-0 z-0">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute h-full w-full object-cover filter blur-[2px]"
+            preload="auto"
+            className="video-background object-cover filter blur-[2px]"
+            aria-hidden="true"
           >
             <source src="/videos/background.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
           {/* Dark overlay to make content more visible */}
           <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -41,25 +45,26 @@ export default async function Home() {
         
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-20">
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" prefetch={true} className="flex items-center gap-3">
             <Image 
               src="/images/filaments-logo.png"
               alt="Filaments Logo"
               width={40}
               height={40}
               priority
+              quality={90}
             />
             <span className="text-xl font-bold text-white">Filaments</span>
           </Link>
           <nav>
             <ul className="flex gap-6 text-white">
               <li>
-                <a href="/about" className="hover:text-blue-400 transition flex items-center gap-2 group">
+                <Link href="/about" prefetch={true} className="hover:text-blue-400 transition flex items-center gap-2 group">
                   <svg className="w-5 h-5 text-white group-hover:text-blue-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   About
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#game-details" className="hover:text-blue-400 transition flex items-center gap-2 group">
@@ -85,6 +90,7 @@ export default async function Home() {
                 height={100}
                 priority
                 className="h-auto"
+                quality={90}
               />
             </div>
             <p className="text-lg md:text-xl text-blue-300 font-semibold mb-4">&quot;Don&apos;t copy; Iterate&quot;</p>
@@ -96,9 +102,9 @@ export default async function Home() {
               <a href="#game-details" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition">
                 Our Game
               </a>
-              <a href="/about" className="bg-transparent border border-white hover:bg-white/10 text-white px-6 py-3 rounded-lg font-medium transition">
+              <Link href="/about" prefetch={true} className="bg-transparent border border-white hover:bg-white/10 text-white px-6 py-3 rounded-lg font-medium transition">
                 About Us
-              </a>
+              </Link>
             </div>
             
             {/* Social Media Icons */}
@@ -126,14 +132,16 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Game Details Section */}
+      {/* Game Details Section - Lazy loaded with Suspense */}
       <section id="game-details" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-white mb-16">Introducing Limina</h2>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
-            {filaments.map(game => (
-              <FilamentCard key={game.id} game={game} />
-            ))}
+            <Suspense fallback={<div className="min-h-[300px] bg-white/5 backdrop-blur-sm rounded-lg flex items-center justify-center"><div className="animate-pulse text-white">Loading game details...</div></div>}>
+              {filaments.map(game => (
+                <FilamentCard key={game.id} game={game} />
+              ))}
+            </Suspense>
           </div>
         </div>
       </section>

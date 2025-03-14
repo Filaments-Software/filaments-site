@@ -14,4 +14,18 @@
   height: auto;
   transform: translateX(-50%) translateY(-50%);
   z-index: 0;
+  will-change: transform; /* Performance optimization for animation */
+  backface-visibility: hidden; /* Reduce paints */
+  contain: content; /* Performance optimization */
+}
+
+/* Loading state for video */
+.video-background:not(:defined),
+.video-background.loading {
+  opacity: 0;
+}
+
+.video-background.loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }

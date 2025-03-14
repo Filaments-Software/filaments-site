@@ -14,7 +14,7 @@ interface FilamentCardProps {
   game: Game;
 }
 
-export function FilamentCard({ game }: FilamentCardProps) {
+export default function FilamentCard({ game }: FilamentCardProps) {
   return (
     <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-blue-500/20">
       <div className="relative h-48 overflow-hidden">
@@ -53,3 +53,6 @@ export function FilamentCard({ game }: FilamentCardProps) {
     </div>
   );
 }
+
+// Keep named export for backward compatibility
+export { FilamentCard };

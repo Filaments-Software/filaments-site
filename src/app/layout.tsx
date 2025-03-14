@@ -2,14 +2,19 @@ import { type PropsWithChildren } from "react";
 import { Montserrat } from "next/font/google";
 import { TRPCReactProvider } from "@/trpc/react";
 import Image from "next/image";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "@/styles/globals.css";
 
-// Load Montserrat with all weights for better design flexibility
+// Optimize font loading by only including the weights we actually use
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  // Only include the weights we actually use in the site
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-montserrat",
+  display: "swap", // Optimize font loading
+  preload: true,
+  adjustFontFallback: true,
 });
 
 export const metadata = {
@@ -21,6 +26,14 @@ export const metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className={montserrat.variable}>
+      <head>
+        {/* Preload critical resources */}
+        <link rel="preload" href="/images/filaments-logo.png" as="image" />
+        <link rel="preload" href="/images/filaments-logo-text.png" as="image" />
+        
+        {/* Prefetch critical routes for faster navigation */}
+        <link rel="prefetch" href="/about" />
+      </head>
       <body className="font-montserrat bg-[#071e3d]">
         <TRPCReactProvider>
           <main>
@@ -36,6 +49,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
                     width={60}
                     height={60}
                     className="h-auto"
+                    loading="lazy"
                   />
                 </div>
                 <div>
