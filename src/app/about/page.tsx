@@ -153,6 +153,12 @@ export default function AboutPage() {
                   role: "Founder",
                   image: "/images/team-1.jpg",
                   bio: "Just a 25-year-old guy who loves to create games and explore new ideas. Im passionate about storytelling and game design.",
+                },
+                {
+                  name: "You?",
+                  role: "Join discord and reach out!",
+                  image: "/images/addperson.jpg",
+                  bio: "Always on the look out for talented individuals to join our team. If you're passionate about game development, reach out. :D",
                 }
               ].map(member => (
                 <div key={member.name} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden">
