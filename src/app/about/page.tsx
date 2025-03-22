@@ -113,8 +113,7 @@ export default function AboutPage() {
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10">
             <p className="text-xl text-center text-gray-300">
               &quot;To create games that build upon the foundations laid by others, iterating and evolving 
-              ideas rather than simply copying them—transforming inspiration into innovation, 
-              one filament at a time.&quot;
+              ideas—transforming inspiration into innovation, one filament at a time.&quot;
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
