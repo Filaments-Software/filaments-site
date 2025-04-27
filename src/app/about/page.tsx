@@ -175,7 +175,7 @@ export default function AboutPage() {
                 {
                   name: "Swittens",
                   role: "Mapper / Level Designer",
-                  image: "/images/team-3.png",
+                  image: "/images/team-3.jpg",
                   bio: "We must stay focused brothers",
                 },
                 {
