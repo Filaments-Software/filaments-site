@@ -18,9 +18,9 @@ export default async function Home() {
     },
     {
       id: 2,
-      ident: "breach",
+      ident: "Breach",
       title: "breach",
-      description: "Breach is a multiplayer, asymmetrical tactical survival game set in the SCP universe, serving as the spiritual successor to GMOD&apos;s Breach gamemode.",
+      description: "Breach is a multiplayer, asymmetrical tactical survival game set in the SCP universe, serving as the spiritual successor to GMODs Breach gamemode.",
       image: "/images/BREACH-wide-opt.png",
       platforms: ["PC"],
       releaseStatus: "Planned for Development"
