@@ -54,5 +54,4 @@ export default function FilamentCard({ game }: FilamentCardProps) {
   );
 }
 
-// Keep named export for backward compatibility
 export { FilamentCard };

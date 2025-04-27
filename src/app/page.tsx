@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense, lazy } from "react";
 
-// Lazy load below-the-fold components
+
 const FilamentCard = lazy(() => import("./_components/FilamentCard").then(mod => ({ default: mod.FilamentCard })));
 
 export default async function Home() {
-  // Single game in development
   const filaments = [
     {
       id: 1,
@@ -16,6 +15,15 @@ export default async function Home() {
       image: "/images/limina.png",
       platforms: ["PC"],
       releaseStatus: "In Development"
+    },
+    {
+      id: 2,
+      ident: "breach",
+      title: "breach",
+      description: "Breach is a multiplayer, asymmetrical tactical survival game set in the SCP universe, serving as the spiritual successor to GMOD&apos;s Breach gamemode.",
+      image: "/images/BREACH-wide-opt.png",
+      platforms: ["PC"],
+      releaseStatus: "Planned for Development"
     }
   ];
 
