@@ -167,10 +167,10 @@ export default function AboutPage() {
                   bio: "Just a 25-year-old guy who loves to create games and explore new ideas. Im passionate about storytelling and game design.",
                 },
                 {
-                  name: "Wizard",
-                  role: "Mapper / Level Designer",
-                  image: "/images/team-2.png",
-                  bio: "Imma wizard.",
+                  name: "North",
+                  role: "Novice Mapper / UI Designer", 
+                  image: "/images/team-2.jpg",
+                  bio: "'Just a chill guy'",
                 },
                 {
                   name: "Swittens",
