@@ -168,7 +168,7 @@ export default function AboutPage() {
                 },
                 {
                   name: "North",
-                  role: "Novice Mapper / UI Designer", 
+                  role: "Mapper / UI Designer", 
                   image: "/images/team-2.jpg",
                   bio: "'Just a chill guy'",
                 },
@@ -176,7 +176,7 @@ export default function AboutPage() {
                   name: "Swittens",
                   role: "Mapper / Level Designer",
                   image: "/images/team-3.jpg",
-                  bio: "We must stay focused brothers",
+                  bio: "It was me, DIO!",
                 },
                 {
                   name: "You?",
