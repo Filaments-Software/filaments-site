@@ -182,12 +182,12 @@ export default function AboutPage() {
                   name: "𝙰𝚋𝚢𝚜𝚜 ♡",
                   role: "Graphic Designer",
                   image: "/images/team-4.png",
-                  bio: "'I have a strawpage pls click me -> https://frostyabyss.straw.page/'",
+                  bio: <>I have a strawpage -&gt; <a href="https://frostyabyss.straw.page/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 underline">https://frostyabyss.straw.page/</a></>,
                 },
                 {
                   name: "DrakeFruit",
                   role: "Programmer / 3D Artist",
-                  image: "/images/team-5.jpg",
+                  image: "/images/team-5.png",
                   bio: "'Eeby Deeby'",
                 },
                 {
