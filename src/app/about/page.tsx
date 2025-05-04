@@ -164,11 +164,11 @@ export default function AboutPage() {
                   name: "Arcev",
                   role: "Founder",
                   image: "/images/team-1.jpg",
-                  bio: "Just a 25-year-old guy who loves to create games and explore new ideas. Im passionate about storytelling and game design.",
+                  bio: "TODO: Add a ChatGPT prompt here",
                 },
                 {
                   name: "North",
-                  role: "Mapper / UI Designer", 
+                  role: "Mapper / Level Designer", 
                   image: "/images/team-2.jpg",
                   bio: "'Just a chill guy'",
                 },
@@ -177,6 +177,18 @@ export default function AboutPage() {
                   role: "Mapper / Level Designer",
                   image: "/images/team-3.jpg",
                   bio: "It was me, DIO!",
+                },
+                {
+                  name: "𝙰𝚋𝚢𝚜𝚜 ♡",
+                  role: "Graphic Designer",
+                  image: "/images/team-4.png",
+                  bio: "'I have a strawpage pls click me -> https://frostyabyss.straw.page/'",
+                },
+                {
+                  name: "DrakeFruit",
+                  role: "Programmer / 3D Artist",
+                  image: "/images/team-5.jpg",
+                  bio: "'Eeby Deeby'",
                 },
                 {
                   name: "You?",
