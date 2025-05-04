@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About Filaments Software",
-  description: "Learn about our game studio, our mission, and the team behind Limina",
+  description: "Learn about our game studio, our mission, and the team behind Filaments.",
 };
 
 export default function AboutPage() {
@@ -165,6 +165,7 @@ export default function AboutPage() {
                   role: "Founder",
                   image: "/images/team-1.png",
                   bio: "TODO: Add a ChatGPT prompt here",
+                  style: "contain",
                 },
                 {
                   name: "North",
@@ -189,12 +190,14 @@ export default function AboutPage() {
                   role: "Programmer / 3D Artist",
                   image: "/images/team-5.png",
                   bio: "'Eeby Deeby'",
+                  style: "contain",
                 },
                 {
                   name: "You?",
                   role: "Join discord and reach out!",
                   image: "/images/addperson.png",
                   bio: "Always on the look out for talented individuals to join our team. If you're passionate about game development, reach out. :D",
+                  style: "contain",
                 }
               ].map(member => (
                 <div key={member.name} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden">
@@ -203,7 +206,7 @@ export default function AboutPage() {
                       src={member.image} 
                       alt={member.name}
                       fill
-                      style={{ objectFit: "cover" }}
+                      style={{ objectFit: (member.style ?? "cover") as "contain" | "cover" | "fill" | "none" | "scale-down" }}
                     />
                   </div>
                   <div className="p-6">
