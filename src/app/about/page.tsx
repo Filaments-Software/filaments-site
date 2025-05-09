@@ -193,6 +193,13 @@ export default function AboutPage() {
                   style: "contain",
                 },
                 {
+                  name: "𝕊𝕢𝕦𝕠𝕘",
+                  role: "Mapper / Level Designer",
+                  image: "/images/team-6.png",
+                  bio: "'God damn I love frogs'",
+                  style: "contain",
+                },
+                {
                   name: "You?",
                   role: "Join discord and reach out!",
                   image: "/images/addperson.png",
