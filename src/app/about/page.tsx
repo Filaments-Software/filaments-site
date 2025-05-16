@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Filaments Software",
+  title: "About",
   description: "Learn about our game studio, our mission, and the team behind Filaments.",
 };
 
@@ -86,16 +86,16 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-300 mb-4">
               The name &quot;Filaments&quot; represents the philosophy—that games are like threads of light that connect 
-              people, ideas, and emotions into a brilliant tapestry of experiences.
+              people and ideas into a bunch of cool experiences.
             </p>
             <p className="text-gray-300 mb-4">
               The motto, &quot;Don&apos;t copy; Iterate,&quot; embodies our approach to game development. We believe in learning 
               from what works, then innovating and evolving those ideas into something fresh and unique.
             </p>
             <p className="text-gray-300">
-              Based in the US, filaments&apos; small but growing team is currently focused on developing a debut title &quot;Limina&quot; - 
-              an immersive liminal exploration game built on the S&Box Engine that draws inspiration from 
-              the unsettling spaces of the Backrooms and the mysterious lore from the SCP universe.
+              Based in the US, filaments&apos; small but growing team is currently focused on developing various titles to debut.
+              Limina is our first public project announced, with a focus on a Singleplayer experience. Another unannounced project is in the works,
+              which will be a Multiplayer experience. We are excited to share more details about these projects in the future.
             </p>
           </div>
         </div>
@@ -232,37 +232,6 @@ export default function AboutPage() {
       <div className="flex justify-center my-8">
         <div className="w-24 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>
       </div>
-
-      {/* Current Project */}
-      <section className="py-10 pb-20">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-10 text-center">Current Projects</h2>
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10 shadow-xl">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-4">Limina</h3>
-                <p className="text-gray-300 mb-4">
-                  An immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. 
-                  Built on the S&Box Engine, Limina invites players to navigate through uncanny spaces 
-                  where reality&apos;s boundaries blur.
-                </p>
-                <p className="text-gray-300">
-                  Currently in active development, we&apos;re excited to share more details about Limina in the coming months.
-                </p>
-              </div>
-              <div className="rounded-lg overflow-hidden">
-                <Image 
-                  src="/images/limina.png" 
-                  alt="Limina - Our debut game" 
-                  width={500} 
-                  height={300} 
-                  className="w-full h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
