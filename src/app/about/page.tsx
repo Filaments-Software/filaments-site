@@ -168,12 +168,6 @@ export default function AboutPage() {
                   style: "contain",
                 },
                 {
-                  name: "North",
-                  role: "Mapper / Level Designer", 
-                  image: "/images/team-2.jpg",
-                  bio: "'Just a chill guy'",
-                },
-                {
                   name: "Swittens",
                   role: "Mapper / Level Designer",
                   image: "/images/team-3.jpg",
@@ -192,6 +186,12 @@ export default function AboutPage() {
                   image: "/images/team-6.png",
                   bio: "'God damn I love frogs'",
                   style: "contain",
+                },
+                {
+                  name: "North",
+                  role: "Quality Assurance", 
+                  image: "/images/team-2.jpg",
+                  bio: "'Just a chill guy'",
                 },
                 {
                   name: "You?",
