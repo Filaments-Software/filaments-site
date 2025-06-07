@@ -188,6 +188,12 @@ export default function AboutPage() {
                   style: "contain",
                 },
                 {
+                  name: "HunterMvPz",
+                  role: "3D Artist / Animator", 
+                  image: "/images/team-4.png",
+                  bio: "'I Hunter on your Mv Pz'",
+                },
+                {
                   name: "North",
                   role: "Quality Assurance", 
                   image: "/images/team-2.jpg",
