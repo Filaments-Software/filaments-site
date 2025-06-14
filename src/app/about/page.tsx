@@ -188,6 +188,13 @@ export default function AboutPage() {
                   style: "contain",
                 },
                 {
+                  name: "MAX NOIZ",
+                  role: "Sound Designer / Artist",
+                  image: "/images/team-7.png",
+                  bio: "'eat rocks'",
+                  style: "contain",
+                },
+                {
                   name: "HunterMvPz",
                   role: "3D Artist / Animator", 
                   image: "/images/team-4.png",
