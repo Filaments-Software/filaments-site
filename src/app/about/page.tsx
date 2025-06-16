@@ -201,12 +201,6 @@ export default function AboutPage() {
                   bio: "'I Hunter on your Mv Pz'",
                 },
                 {
-                  name: "North",
-                  role: "Quality Assurance", 
-                  image: "/images/team-2.jpg",
-                  bio: "'Just a chill guy'",
-                },
-                {
                   name: "You?",
                   role: "Join discord and reach out!",
                   image: "/images/addperson.png",
