@@ -1,29 +1,118 @@
-# Create T3 App
+# Filaments Software Website
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+*This README was AI-generated.*
 
-## What's next? How do I make an app with this?
+## Overview
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+The official website for Filaments Software - an indie game studio dedicated to creating innovative gaming experiences. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+**Studio Motto**: "Don't copy; Iterate"
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## 🚀 Features
 
-## Learn More
+- **Modern Tech Stack**: Next.js 15 with App Router, TypeScript, Tailwind CSS
+- **Performance Optimized**: Image optimization, lazy loading, and performance monitoring with Vercel Speed Insights
+- **Responsive Design**: Mobile-first approach with beautiful gradients and glassmorphism effects
+- **Game Showcase**: Interactive game cards with hover effects and platform badges
+- **Team Section**: Meet the team with individual profiles and roles
+- **Social Integration**: Discord and S&Box community links
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- **Framework**: Next.js 15.2.3
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with custom gradients
+- **Fonts**: Montserrat via Google Fonts
+- **API Layer**: tRPC with React Query
+- **Environment**: T3 Environment Variables
+- **Performance**: Vercel Speed Insights
+- **Package Manager**: npm
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## 🎮 Current Games
 
-## How do I deploy this?
+### Limina
+An immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. Built on the S&Box Engine.
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### Breach
+A modern reimagining of GMOD's Breach gamemode, built for S&Box.
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm 10.9.2+
+
+## 🧩 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── _components/        # Shared components
+│   │   └── FilamentCard.tsx
+│   ├── about/             # About page
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── env.js                 # Environment configuration
+├── styles/                # Global styles
+└── trpc/                  # tRPC configuration
+```
+
+## 📜 Available Scripts
+
+- `npm run dev` - Start development server with Turbo
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run preview` - Build and start production server
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint issues
+- `npm run typecheck` - Run TypeScript type checking
+- `npm run format:check` - Check code formatting
+- `npm run format:write` - Format code with Prettier
+- `npm run check` - Run both linting and type checking
+
+## 🎨 Design Features
+
+- **Color Scheme**: Blue gradient theme with glassmorphism effects
+- **Typography**: Montserrat font family with multiple weights
+- **Components**: Reusable game cards with hover animations
+- **Video Background**: Autoplay background video on hero section
+- **Responsive Images**: Next.js Image optimization with multiple formats (AVIF, WebP)
+
+## 🌐 Deployment
+
+The site is optimized for deployment on Vercel with:
+- Automatic builds on Git push
+- Edge functions support
+- Image optimization
+- Performance monitoring
+
+## 👥 Team
+
+The current team includes developers, artists, mappers, and sound designers working on various aspects of game development.
+
+## 🔗 Links
+
+- **Discord**: https://discord.gg/GXZsHu3KQF
+- **S&Box**: https://sbox.game/fss
+
+## 📄 License
+
+All rights reserved © Filaments Software
+
+## 🤝 Contributing
+
+This is a private project for Filaments Software. For team members wanting to contribute:
+
+1. Create a feature branch
+2. Make your changes
+3. Test thoroughly
+4. Submit a pull request
+
+## 📞 Contact
+
+Join our Discord server for the latest updates and community discussions.
+
+---
+
+*Website built with ❤️ by the Filaments Software team*
