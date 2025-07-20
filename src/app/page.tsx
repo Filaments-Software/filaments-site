@@ -15,6 +15,15 @@ export default async function Home() {
       image: "/images/limina.png",
       platforms: ["PC"],
       releaseStatus: "In Development"
+    },
+    {
+      id: 2,
+      ident: "breach",
+      title: "Breach",
+      description: "Breach is a modern reimagining of GMOD's Breach gamemode, built for S&Box.",
+      image: "/images/title.png",
+      platforms: ["PC"],
+      releaseStatus: "In Development"
     }
   ];
 
