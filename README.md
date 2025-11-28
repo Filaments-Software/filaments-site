@@ -28,14 +28,6 @@ The official website for Filaments Software - an indie game studio dedicated to 
 - **Performance**: Vercel Speed Insights
 - **Package Manager**: npm
 
-## 🎮 Current Games
-
-### Limina
-An immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. Built on the S&Box Engine.
-
-### Breach
-A modern reimagining of GMOD's Breach gamemode, built for S&Box.
-
 ## 📦 Getting Started
 
 ### Prerequisites
