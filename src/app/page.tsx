@@ -29,7 +29,7 @@ export default async function Home() {
       id: 3,
       ident: "upcoming-mp",
       title: "Upcoming Multiplayer Title",
-      description: "WIP 😉",
+      description: "Powered by Filaments - available nowhere 😉",
       image: "/images/bs.png",
       platforms: ["PC"],
       releaseStatus: "In Development"
