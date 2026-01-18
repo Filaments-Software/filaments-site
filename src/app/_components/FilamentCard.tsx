@@ -15,24 +15,37 @@ interface FilamentCardProps {
 }
 
 export default function FilamentCard({ game }: FilamentCardProps) {
+  const getStatusColor = (status: string): string => {
+    switch (status.toLowerCase()) {
+      case "halted":
+        return "bg-red-500";
+      case "in development":
+        return "bg-yellow-500";
+      case "released":
+        return "bg-green-500";
+      default:
+        return "bg-blue-500";
+    }
+  };
+
   return (
-    <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-blue-500/20">
+    <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-blue-500/20 flex flex-col h-full">
       <div className="relative h-48 overflow-hidden">
         <Image 
           src={game.image} 
           alt={game.title}
           width={800}
           height={450}
-          className="rounded-t-xl w-full h-full object-cover"
+          className="w-full h-full object-cover"
           priority
         />
-        <div className="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded z-10">
+        <div className={`absolute top-2 right-2 ${getStatusColor(game.releaseStatus)} text-white text-xs px-2 py-1 rounded z-10`}>
           {game.releaseStatus}
         </div>
       </div>
-      <div className="p-6 relative z-20 bg-white/5 backdrop-blur-sm">
+      <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-white mb-2">{game.title}</h3>
-        <p className="text-gray-300 mb-4">{game.description}</p>
+        <p className="text-gray-300 mb-4 flex-grow">{game.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {game.platforms.map(platform => (
             <span 

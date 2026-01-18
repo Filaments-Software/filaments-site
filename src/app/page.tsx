@@ -14,7 +14,7 @@ export default async function Home() {
       description: "Limina is an immersive liminal exploration game inspired by the Backrooms and SCP Foundation lore. Built on the S&Box Engine.",
       image: "/images/limina.png",
       platforms: ["PC"],
-      releaseStatus: "In Development"
+      releaseStatus: "Halted"
     },
     {
       id: 2,
@@ -22,6 +22,15 @@ export default async function Home() {
       title: "Breach",
       description: "Breach is a modern reimagining of GMOD's Breach gamemode, built for S&Box.",
       image: "/images/title.png",
+      platforms: ["PC"],
+      releaseStatus: "Halted"
+    },
+    {
+      id: 3,
+      ident: "upcoming-mp",
+      title: "Upcoming Multiplayer Title",
+      description: "WIP 😉",
+      image: "/images/bs.png",
       platforms: ["PC"],
       releaseStatus: "In Development"
     }
@@ -134,7 +143,7 @@ export default async function Home() {
       <section id="game-details" className="py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center text-white mb-16">GAMES</h2>
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <Suspense fallback={<div className="min-h-[300px] bg-white/5 backdrop-blur-sm rounded-lg flex items-center justify-center"><div className="animate-pulse text-white">Loading game details...</div></div>}>
               {filaments.map(game => (
                 <FilamentCard key={game.id} game={game} />
