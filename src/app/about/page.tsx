@@ -181,13 +181,6 @@ export default function AboutPage() {
                   style: "contain",
                 },
                 {
-                  name: "𝕊𝕢𝕦𝕠𝕘",
-                  role: "Mapper / Level Designer",
-                  image: "/images/team-6.png",
-                  bio: "'God damn I love frogs'",
-                  style: "contain",
-                },
-                {
                   name: "MAX NOIZ",
                   role: "Sound Designer / Artist",
                   image: "/images/team-7.png",
