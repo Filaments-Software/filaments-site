@@ -200,6 +200,12 @@ export default function AboutPage() {
                   bio: ":)",
                 },
                 {
+                  name: "Barry Beckman",
+                  role: "Programmer / Game Designer", 
+                  image: "/images/team-10.png",
+                  bio: "Jinx is not real",
+                },
+                {
                   name: "tzainten",
                   role: "Programmer", 
                   image: "/images/team-8.png",
