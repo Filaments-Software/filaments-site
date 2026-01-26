@@ -164,7 +164,7 @@ export default function AboutPage() {
                   name: "Arcev",
                   role: "Founder",
                   image: "/images/team-1.png",
-                  bio: "TODO: Add a ChatGPT prompt here",
+                  bio: "How it be, what it do?",
                   style: "contain",
                 },
                 {
