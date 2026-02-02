@@ -14,7 +14,7 @@ export default function AboutPage() {
         {/* Navigation integrated at top */}
         <div className="container mx-auto px-4 py-4 flex justify-between items-center relative z-10 mb-16">
           <Link href="/" className="flex items-center gap-3">
-            <Image 
+            <Image
               src="/images/filaments-logo.png"
               alt="Filaments Logo"
               width={40}
@@ -45,13 +45,13 @@ export default function AboutPage() {
             </ul>
           </nav>
         </div>
-        
+
         {/* Hero content */}
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center flex items-center justify-center flex-wrap">
-            About 
+            About
             <span className="inline-block mx-3">
-              <Image 
+              <Image
                 src="/images/filaments-logo.png"
                 alt="Filaments Logo"
                 width={50}
@@ -81,15 +81,15 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-6 text-center">The Story</h2>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gray-300 mb-4">
-              Filaments Software is founded by people who share a common vision: 
+              Filaments Software is founded by people who share a common vision:
               to make intriging experiences that are fused with innovative gameplay mechanics.
             </p>
             <p className="text-gray-300 mb-4">
-              The name &quot;Filaments&quot; represents the philosophy—that games are like threads of light that connect 
+              The name &quot;Filaments&quot; represents the philosophy—that games are like threads of light that connect
               people and ideas into a bunch of cool experiences.
             </p>
             <p className="text-gray-300 mb-4">
-              The motto, &quot;Don&apos;t copy; Iterate,&quot; embodies our approach to game development. We believe in learning 
+              The motto, &quot;Don&apos;t copy; Iterate,&quot; embodies our approach to game development. We believe in learning
               from what works, then innovating and evolving those ideas into something fresh and unique.
             </p>
             <p className="text-gray-300">
@@ -112,7 +112,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-10 text-center">The Mission</h2>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-10">
             <p className="text-xl text-center text-gray-300">
-              &quot;To create games that build upon the foundations laid by others, iterating and evolving 
+              &quot;To create games that build upon the foundations laid by others, iterating and evolving
               ideas—transforming inspiration into innovation, one filament at a time.&quot;
             </p>
           </div>
@@ -189,27 +189,33 @@ export default function AboutPage() {
                 },
                 {
                   name: "HunterMvPz",
-                  role: "3D Artist / Animator", 
+                  role: "3D Artist / Animator",
                   image: "/images/team-4.png",
                   bio: "'I Hunter on your Mv Pz'",
                 },
                 {
-                  name: "Lilly",
-                  role: "Tester", 
-                  image: "/images/team-9.png",
-                  bio: ":)",
+                  name: "tzainten",
+                  role: "Programmer",
+                  image: "/images/team-8.png",
+                  bio: "Jinx is real",
                 },
                 {
                   name: "Barry Beckman",
-                  role: "Programmer / Game Designer", 
+                  role: "Programmer / Game Designer",
                   image: "/images/team-10.png",
                   bio: "Jinx is not real",
                 },
                 {
-                  name: "tzainten",
-                  role: "Programmer", 
-                  image: "/images/team-8.png",
-                  bio: "Jinx is real",
+                  name: "Lilly",
+                  role: "Tester",
+                  image: "/images/team-9.png",
+                  bio: ":)",
+                },
+                {
+                  name: "Solqr",
+                  role: "Tester",
+                  image: "/images/team-11.png",
+                  bio: "idk what to put here",
                 },
                 {
                   name: "You?",
@@ -221,8 +227,8 @@ export default function AboutPage() {
               ].map(member => (
                 <div key={member.name} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden">
                   <div className="relative h-64">
-                    <Image 
-                      src={member.image} 
+                    <Image
+                      src={member.image}
                       alt={member.name}
                       fill
                       style={{ objectFit: (member.style ?? "cover") as "contain" | "cover" | "fill" | "none" | "scale-down" }}
