@@ -101,6 +101,14 @@ export default function RootLayout({ children }: PropsWithChildren) {
                       Wiki
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="/causal"
+                      className="transition hover:text-blue-400"
+                    >
+                      Causal
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div id="contact">
