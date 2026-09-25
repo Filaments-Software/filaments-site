@@ -1,6 +1,5 @@
 import { type PropsWithChildren } from "react";
 import { Montserrat } from "next/font/google";
-import { TRPCReactProvider } from "@/trpc/react";
 import Image from "next/image";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -35,9 +34,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <link rel="prefetch" href="/about" />
       </head>
       <body className="bg-[#071e3d] font-montserrat">
-        <TRPCReactProvider>
-          <main>{children}</main>
-          <SpeedInsights />
+        <main>{children}</main>
+        <SpeedInsights />
           <footer className="bg-[#071e3d] py-10 text-white">
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
@@ -157,7 +155,6 @@ export default function RootLayout({ children }: PropsWithChildren) {
               </div>
             </div>
           </footer>
-        </TRPCReactProvider>
       </body>
     </html>
   );
