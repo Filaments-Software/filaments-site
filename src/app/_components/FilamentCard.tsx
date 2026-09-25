@@ -10,6 +10,7 @@ interface Game {
   platforms: string[];
   releaseStatus: string;
   href?: string;
+  playNow?: boolean;
 }
 
 interface FilamentCardProps {
@@ -62,14 +63,25 @@ export default function FilamentCard({ game }: FilamentCardProps) {
         <p className="mb-4 min-h-12 flex-grow text-gray-300">
           {game.description}
         </p>
-        {game.href ? (
-          <div className="flex justify-center gap-3">
+        <div className="flex justify-center gap-3">
+          {game.href ? (
             <Link
               href={game.href}
               className="inline-block rounded border border-blue-500 bg-transparent px-8 py-1.5 text-center text-blue-400 transition-colors hover:bg-blue-500 hover:text-white"
             >
               Learn More
             </Link>
+          ) : (
+            <a
+              href={`https://sbox.game/fss/${game.ident}`}
+              className="inline-block rounded border border-blue-500 bg-transparent px-8 py-1.5 text-center text-blue-400 transition-colors hover:bg-blue-500 hover:text-white"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </a>
+          )}
+          {game.playNow && (
             <a
               href={`https://sbox.game/fss/${game.ident}`}
               className="inline-block rounded bg-blue-500 px-8 py-1.5 text-center text-white transition-colors hover:bg-blue-600"
@@ -78,17 +90,8 @@ export default function FilamentCard({ game }: FilamentCardProps) {
             >
               Play Now
             </a>
-          </div>
-        ) : (
-          <a
-            href={`https://sbox.game/fss/${game.ident}`}
-            className="inline-block self-center rounded border border-blue-500 bg-transparent px-8 py-1.5 text-center text-blue-400 transition-colors hover:bg-blue-500 hover:text-white"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn More
-          </a>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

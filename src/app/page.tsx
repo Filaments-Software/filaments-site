@@ -50,16 +50,18 @@ export default async function Home() {
       platforms: ["PC"],
       releaseStatus: "In Development",
       href: "/bloodsigil",
+      playNow: false,
     },
     {
       id: 4,
       ident: "causal",
       title: "Causal",
-      description: "A first-person liminal puzzle game.",
+      description: "A first-person liminal puzzle game, set in a research facility.",
       image: "/images/causal/causal-thumb.png",
       platforms: ["PC"],
       releaseStatus: "In Development",
       href: "/causal",
+      playNow: true,
     },
   ].sort((a, b) => rankStatus(a.releaseStatus) - rankStatus(b.releaseStatus));
 
