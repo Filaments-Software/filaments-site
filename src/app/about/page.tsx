@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About",
+  title: "About Filaments",
   description:
     "Learn about our game studio, our mission, and the team behind Filaments.",
 };
@@ -82,7 +82,7 @@ export default function AboutPage() {
 
         {/* Hero content */}
         <div className="relative z-10 container mx-auto px-4">
-          <h1 className="mb-6 flex flex-wrap items-center justify-center text-center text-5xl font-bold md:text-6xl">
+          <h1 className="mb-10 flex flex-wrap items-center justify-center text-center text-5xl font-bold md:text-6xl">
             About
             <span className="mx-3 inline-block">
               <Image
@@ -95,12 +95,10 @@ export default function AboutPage() {
             </span>
             <span className="text-blue-400">Filaments</span>
           </h1>
-          <p className="mx-auto mb-4 max-w-3xl text-center text-xl font-semibold text-blue-300">
-            &quot;Don&apos;t copy; Iterate&quot;
-          </p>
-          <p className="mx-auto max-w-3xl text-center text-xl text-gray-300">
-            We&apos;re a passionate indie game studio dedicated to creating
-            games called filaments.
+          <p className="mx-auto max-w-3xl text-center text-xl font-light text-gray-300">
+            Filaments Software was founded by people who share a common vision:
+            to craft intriguing experiences fused with innovative gameplay
+            mechanics.
           </p>
         </div>
       </section>
@@ -116,11 +114,6 @@ export default function AboutPage() {
           <h2 className="mb-6 text-center text-3xl font-bold">The Story</h2>
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-gray-300">
-              Filaments Software was founded by people who share a common
-              vision: to craft intriguing experiences fused with innovative
-              gameplay mechanics.
-            </p>
-            <p className="mb-4 text-gray-300">
               The name &quot;Filaments&quot; reflects the philosophy that games
               are like threads of light, connecting people and ideas into
               something greater than any single experience.
@@ -131,12 +124,8 @@ export default function AboutPage() {
               works, then evolving those ideas into something fresh and
               distinctly our own.
             </p>
-            <p className="text-gray-300">
-              Based in the US, our small but growing team with two public
-              titles. Limina is our first public project, a singleplayer
-              experience. Bloodsigil is our second, a multiplayer zombie
-              survival game built on S&amp;Box. We are excited to share more as
-              both projects continue to grow.
+            <p className="mx-auto max-w-3xl text-center text-2xl font-bold text-blue-300">
+              &quot;Don&apos;t copy; Iterate&quot;
             </p>
           </div>
         </div>
@@ -250,75 +239,109 @@ export default function AboutPage() {
                   role: "Founder",
                   image: "/images/team-1.png",
                   bio: "How it be, what it do?",
+                  roundedAvatar: true,
+                  avatarScale: 1,
                 },
                 {
                   name: "Swittens",
                   role: "Mapper / Level Designer",
                   image: "/images/team-3.jpg",
                   bio: "It was me, DIO!",
+                  roundedAvatar: true,
+                  avatarScale: 1,
                 },
                 {
                   name: "DrakeFruit",
                   role: "Programmer / 3D Artist",
                   image: "/images/team-5.png",
                   bio: "'Eeby Deeby'",
+                  roundedAvatar: false,
+                  avatarScale: 1,
                 },
                 {
                   name: "MAX NOIZ",
                   role: "Sound Designer / Artist",
                   image: "/images/team-7.png",
                   bio: "'eat rocks'",
+                  roundedAvatar: false,
+                  avatarScale: 1,
                 },
                 {
                   name: "HunterMvPz",
                   role: "3D Artist / Animator",
                   image: "/images/team-4.png",
                   bio: "'I Hunter on your Mv Pz'",
+                  roundedAvatar: false,
+                  avatarScale: 1,
                 },
                 {
                   name: "tzainten",
                   role: "Programmer",
                   image: "/images/team-8.png",
                   bio: "Jinx is real",
+                  roundedAvatar: true,
+                  avatarScale: 1,
                 },
                 {
                   name: "Barry Beckman",
                   role: "Programmer / Game Designer",
                   image: "/images/team-10.png",
                   bio: "Jinx is not real",
+                  roundedAvatar: true,
+                  avatarScale: 1,
                 },
                 {
                   name: "Lilly",
                   role: "3D Artist / Tester",
                   image: "/images/team-9.png",
                   bio: ":)",
+                  roundedAvatar: true,
+                  avatarScale: 1,
                 },
                 {
                   name: "Becriv",
                   role: "Mapper / Level Designer",
                   image: "/images/team-11.png",
                   bio: "'I goon to Javascript'",
+                  roundedAvatar: true,
+                  avatarScale: 1,
                 },
                 {
                   name: "You?",
                   role: "Join discord and reach out!",
                   image: "/images/addperson.png",
                   bio: "Always on the look out for talented individuals to join our team. If you're passionate about game development, reach out. :D",
+                  roundedAvatar: true,
+                  avatarScale: 1,
                 },
               ].map((member) => (
                 <div
                   key={member.name}
                   className="rounded-lg bg-white/5 backdrop-blur-sm"
                 >
-                  <div className="relative mx-auto mt-8 h-56 w-56 overflow-hidden rounded-full">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      sizes="224px"
-                      className="object-cover"
-                    />
-                  </div>
+                  {member.roundedAvatar ? (
+                    <div className="relative mx-auto mt-8 h-56 w-56 overflow-hidden rounded-full">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes="224px"
+                        className="object-cover"
+                        style={{ transform: `scale(${member.avatarScale})` }}
+                      />
+                    </div>
+                  ) : (
+                    <div className="relative mx-auto mt-8 h-56 w-full overflow-hidden">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-contain"
+                        style={{ transform: `scale(${member.avatarScale})` }}
+                      />
+                    </div>
+                  )}
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-white">
                       {member.name}

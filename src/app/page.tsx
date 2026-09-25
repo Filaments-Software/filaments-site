@@ -170,7 +170,7 @@ export default async function Home() {
               &quot;Don&apos;t copy; Iterate&quot;
             </p>
             <p className="mx-auto mb-14 max-w-3xl text-xl text-gray-300 md:text-2xl">
-              We're a passionate indie game studio dedicated
+              We&apos;re a passionate indie game studio dedicated
               <br />
               to creating games called filaments.
             </p>
