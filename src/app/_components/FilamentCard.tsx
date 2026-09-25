@@ -22,6 +22,7 @@ export default function FilamentCard({ game }: FilamentCardProps) {
       case "halted":
         return "bg-red-500";
       case "in development":
+      case "in progress":
         return "bg-yellow-500";
       case "released":
         return "bg-green-500";

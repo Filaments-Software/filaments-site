@@ -9,6 +9,18 @@ const FilamentCard = lazy(() =>
 );
 
 export default async function Home() {
+  // Lower rank sorts first: active work up top, halted games sink last.
+  const statusRank: Record<string, number> = {
+    released: 0,
+    "in development": 1,
+    "in progress": 1,
+    halted: 2,
+  };
+
+  function rankStatus(status: string): number {
+    return statusRank[status.toLowerCase()] ?? 99;
+  }
+
   const filaments = [
     {
       id: 1,
@@ -39,7 +51,17 @@ export default async function Home() {
       releaseStatus: "In Development",
       href: "/bloodsigil",
     },
-  ];
+    {
+      id: 4,
+      ident: "causal",
+      title: "Causal",
+      description: "A first-person liminal puzzle game.",
+      image: "/images/causal/causal-thumb.png",
+      platforms: ["PC"],
+      releaseStatus: "In Development",
+      href: "/causal",
+    },
+  ].sort((a, b) => rankStatus(a.releaseStatus) - rankStatus(b.releaseStatus));
 
   return (
     <div className="relative bg-gradient-to-b from-[#1e3a8a] via-[#12315a] to-[#0f172a]">

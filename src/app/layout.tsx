@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Filaments Software",
+  title: "Filaments",
   description: "Don't copy; Iterate",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };

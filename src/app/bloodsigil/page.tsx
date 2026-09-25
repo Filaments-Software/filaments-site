@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Bloodsigil",
+  title: "Bloodsigil | Filaments",
   description:
     "Bloodsigil is a multiplayer zombie survival game for S&Box. A modern reimagining of GMODs Zombie Survival.",
 };
@@ -520,8 +520,10 @@ export default function BloodsigilPage() {
                 Bloodsigil
               </h3>
               <p className="mb-3 text-center text-gray-300">
-                An origin Arcane sigil. The Chaos fields imbue this crystal with
-                otherworldly powers. Survivors near it feel threatened.
+                An origin ArcaneYou are a causal agent, discover what happened
+                in a research facility. sigil. The Chaos fields imbue this
+                crystal with otherworldly powers. Survivors near it feel
+                threatened.
               </p>
               <ul className="space-y-1 text-sm text-gray-400">
                 <li>Sacrifice health for trinkets with cursed effects</li>
