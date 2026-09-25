@@ -392,7 +392,7 @@ export default function WikiPage() {
                 </span>{" "}
                 shifts the world toward{" "}
                 <span className="text-white">Orderly</span> maps. These are
-                liminal, pristine spaces representing humanitys' hold.
+                liminal, pristine spaces representing humanitys&apos; hold.
               </li>
             </ul>
             <p className="mt-3 text-gray-300">
@@ -454,7 +454,7 @@ export default function WikiPage() {
                 number keys <Key>1</Key>–<Key>6</Key> or the scroll wheel. Slots
                 are categorized by weapon type: primary firearms, sidearms,
                 melee weapons, tools, and deployables. Every player starts with
-                their fists. You're not limited to how many you can hold.
+                their fists. You&apos;re not limited to how many you can hold.
               </p>
               <div className="grid grid-cols-2 gap-3 text-sm md:grid-cols-3">
                 {(
