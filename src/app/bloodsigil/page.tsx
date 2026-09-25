@@ -585,7 +585,7 @@ export default function BloodsigilPage() {
               </h3>
               <p className="mb-3 text-center text-gray-300">
                 A pure azure crystal radiating protective light. This is a
-                causal object of humanitys' will made manifest to protect and
+                causal object of humanitys&apos; will made manifest to protect and
                 provide.
               </p>
               <ul className="space-y-1 text-sm text-gray-400">
