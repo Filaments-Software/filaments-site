@@ -18,6 +18,7 @@ export default function BloodsigilPage() {
             src="/images/bloodsigil/Bloodsigil-barry-bck.png"
             alt="Bloodsigil"
             fill
+            sizes="100vw"
             priority
             className="object-cover"
           />
