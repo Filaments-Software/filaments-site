@@ -39,10 +39,9 @@ export default function FilamentCard({ game }: FilamentCardProps) {
           width={800}
           height={450}
           className={`h-full w-full object-cover ${game.ident === "bloodsigil" ? "object-[center_50%]" : ""}`}
-          priority
         />
         <div
-          className={`absolute right-2 top-2 ${getStatusColor(game.releaseStatus)} z-10 rounded px-2 py-1 text-xs text-white`}
+          className={`absolute top-2 right-2 ${getStatusColor(game.releaseStatus)} z-10 rounded px-2 py-1 text-xs text-white`}
         >
           {game.releaseStatus}
         </div>

@@ -11,7 +11,7 @@ export default function WikiPage() {
   return (
     <div className="bg-gradient-to-b from-[#1a0000] via-[#1a0505] via-[#2a0a0a] to-[#0d0000] text-white">
       {/* Navigation */}
-      <div className="container relative z-10 mx-auto flex items-center justify-between px-4 py-4">
+      <div className="relative z-10 container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/filaments-logo.png"
@@ -77,7 +77,7 @@ export default function WikiPage() {
       </div>
 
       {/* Header */}
-      <section className="pb-10 pt-8">
+      <section className="pt-8 pb-10">
         <div className="container mx-auto px-4 text-center">
           <div className="mb-5 flex justify-center">
             <Image
@@ -366,7 +366,7 @@ export default function WikiPage() {
           </div>
 
           <div className="relative mt-6 rounded-xl border-2 border-dashed border-amber-500/60 bg-amber-950/10 p-6">
-            <div className="absolute right-3 top-3 z-10 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
+            <div className="absolute top-3 right-3 z-10 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
               WIP
             </div>
             <h3 className="mb-2 text-lg font-bold text-purple-400">
@@ -597,21 +597,22 @@ export default function WikiPage() {
             </div>
 
             <div className="relative rounded-xl border-2 border-dashed border-amber-500/60 bg-amber-950/10 p-6">
-              <div className="absolute right-3 top-3 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
+              <div className="absolute top-3 right-3 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
                 WIP
               </div>
               <h3 className="mb-3 text-xl font-bold text-red-400">
                 Remantlers
               </h3>
               <p className="text-gray-300">
-                <span className="font-semibold text-white"></span>A
-                deployable tool station that will let nearby players upgrade their equipment.
+                <span className="font-semibold text-white"></span>A deployable
+                tool station that will let nearby players upgrade their
+                equipment.
               </p>
               <p className="mt-3 text-sm text-gray-300">
                 Weapons have tiers. Higher tiers unlock as the game progresses.
                 <br></br>
-                Add specific attachments to uptick your weapon&apos;s tier,
-                e.g. USP with a mag upgrade becomes USP+1.
+                Add specific attachments to uptick your weapon&apos;s tier, e.g.
+                USP with a mag upgrade becomes USP+1.
               </p>
             </div>
           </div>
@@ -893,7 +894,7 @@ export default function WikiPage() {
             <table className="w-full text-left text-sm">
               <thead>
                 <tr className="border-b border-red-900/30">
-                  <th className="pb-2 pr-4 font-semibold text-gray-300">
+                  <th className="pr-4 pb-2 font-semibold text-gray-300">
                     Component
                   </th>
                   <th className="pb-2 font-semibold text-gray-300">Purpose</th>
@@ -919,7 +920,7 @@ export default function WikiPage() {
             <table className="w-full text-left text-sm">
               <thead>
                 <tr className="border-b border-red-900/30">
-                  <th className="pb-2 pr-4 font-semibold text-gray-300">
+                  <th className="pr-4 pb-2 font-semibold text-gray-300">
                     Component
                   </th>
                   <th className="pb-2 font-semibold text-gray-300">Purpose</th>
@@ -941,7 +942,7 @@ export default function WikiPage() {
             <table className="w-full text-left text-sm">
               <thead>
                 <tr className="border-b border-red-900/30">
-                  <th className="pb-2 pr-4 font-semibold text-gray-300">
+                  <th className="pr-4 pb-2 font-semibold text-gray-300">
                     Component
                   </th>
                   <th className="pb-2 font-semibold text-gray-300">Purpose</th>

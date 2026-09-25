@@ -59,9 +59,9 @@ export default async function Home() {
           <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
 
-        <div className="z-5 absolute inset-x-0 top-0 h-[72px] bg-gradient-to-b from-[#071e3d]/90 to-transparent"></div>
+        <div className="absolute inset-x-0 top-0 z-5 h-[72px] bg-gradient-to-b from-[#071e3d]/90 to-transparent"></div>
 
-        <div className="container relative z-20 mx-auto flex items-center justify-between px-4 py-4">
+        <div className="relative z-20 container mx-auto flex items-center justify-between px-4 py-4">
           <Link href="/" prefetch={true} className="flex items-center gap-3">
             <Image
               src="/images/filaments-logo.png"
@@ -132,7 +132,7 @@ export default async function Home() {
 
         {/* Hero content */}
         <div className="flex flex-grow items-start justify-center pt-40 md:pt-48 lg:pt-32">
-          <div className="container relative z-20 mx-auto px-4 text-center">
+          <div className="relative z-20 container mx-auto px-4 text-center">
             <div className="mb-3 flex justify-center">
               <Image
                 src="/images/filaments-logo-text.png"

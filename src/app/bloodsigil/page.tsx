@@ -25,7 +25,7 @@ export default function BloodsigilPage() {
         </div>
 
         {/* Navigation */}
-        <div className="container relative z-20 mx-auto flex items-center justify-between px-4 py-4">
+        <div className="relative z-20 container mx-auto flex items-center justify-between px-4 py-4">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/filaments-logo.png"
@@ -215,7 +215,7 @@ export default function BloodsigilPage() {
             The Crimson Eclipse
           </h2>
           <div className="rounded-2xl border border-red-900/30 bg-red-950/20 p-10 backdrop-blur-sm">
-            <p className="mb-6 text-center text-lg italic text-red-200/80">
+            <p className="mb-6 text-center text-lg text-red-200/80 italic">
               &quot;The world does not turn the way it used to. A disastrous
               event caused Time to break down into cursed cycles, each one
               featuring nights of suffering, paradoxes, and... The Undead.
@@ -414,7 +414,7 @@ export default function BloodsigilPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Bloodsigil */}
             <div className="relative rounded-2xl border-2 border-dashed border-amber-500/60 bg-gradient-to-b from-red-950/30 to-red-950/10 p-8 backdrop-blur-sm">
-              <div className="absolute right-3 top-3 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
+              <div className="absolute top-3 right-3 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
                 WIP
               </div>
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-600/20">
@@ -585,8 +585,8 @@ export default function BloodsigilPage() {
               </h3>
               <p className="mb-3 text-center text-gray-300">
                 A pure azure crystal radiating protective light. This is a
-                causal object of humanitys&apos; will made manifest to protect and
-                provide.
+                causal object of humanitys&apos; will made manifest to protect
+                and provide.
               </p>
               <ul className="space-y-1 text-sm text-gray-400">
                 <li>Provides and Protects, but fragile</li>
@@ -743,7 +743,7 @@ export default function BloodsigilPage() {
 
             {/* Evolutions */}
             <div className="relative rounded-xl border-2 border-dashed border-amber-500/60 bg-red-950/10 p-6 backdrop-blur-sm">
-              <div className="absolute right-3 top-3 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
+              <div className="absolute top-3 right-3 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
                 WIP
               </div>
               <h3 className="mb-3 text-lg font-bold text-red-400">
@@ -774,7 +774,7 @@ export default function BloodsigilPage() {
 
             {/* Nightmares */}
             <div className="relative rounded-xl border-2 border-dashed border-amber-500/60 bg-red-950/10 p-6 backdrop-blur-sm">
-              <div className="absolute right-3 top-3 flex gap-2">
+              <div className="absolute top-3 right-3 flex gap-2">
                 <div className="rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
                   WIP
                 </div>
@@ -858,7 +858,7 @@ export default function BloodsigilPage() {
 
             {/* Economy */}
             <div className="relative rounded-2xl border-2 border-dashed border-amber-500/60 bg-red-950/10 p-8 backdrop-blur-sm">
-              <div className="absolute right-3 top-3 z-10 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
+              <div className="absolute top-3 right-3 z-10 rounded bg-amber-500/20 px-2 py-1 text-xs font-bold text-amber-400">
                 WIP
               </div>
               <h3 className="mb-3 text-xl font-bold text-red-400">

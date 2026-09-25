@@ -9,11 +9,11 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="bg-gradient-to-b from-[#071e3d] via-[#0f172a] via-[#152d5f] via-[#1e3a8a] to-[#071e3d] text-white">
+    <div className="bg-gradient-to-b from-[#071e3d] via-[#0f172a] via-[#1e3a8a] via-[#152d5f] to-[#071e3d] text-white">
       {/* Hero Section with Integrated Navigation */}
-      <section className="relative pb-10 pt-4">
+      <section className="relative pt-4 pb-10">
         {/* Navigation integrated at top */}
-        <div className="container relative z-10 mx-auto mb-16 flex items-center justify-between px-4 py-4">
+        <div className="relative z-10 container mx-auto mb-16 flex items-center justify-between px-4 py-4">
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/filaments-logo.png"
@@ -81,7 +81,7 @@ export default function AboutPage() {
         </div>
 
         {/* Hero content */}
-        <div className="container relative z-10 mx-auto px-4">
+        <div className="relative z-10 container mx-auto px-4">
           <h1 className="mb-6 flex flex-wrap items-center justify-center text-center text-5xl font-bold md:text-6xl">
             About
             <span className="mx-3 inline-block">
