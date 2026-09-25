@@ -90,7 +90,7 @@ export default function AboutPage() {
                 alt="Filaments Logo"
                 width={50}
                 height={50}
-                className="h-auto"
+                className="h-auto w-auto"
               />
             </span>
             <span className="text-blue-400">Filaments</span>

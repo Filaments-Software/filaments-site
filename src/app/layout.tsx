@@ -45,7 +45,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
                   alt="Filaments Logo"
                   width={60}
                   height={60}
-                  className="h-auto"
+                  className="h-auto w-auto"
                   loading="lazy"
                 />
               </div>
