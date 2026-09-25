@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Game {
   id: number;
@@ -8,6 +9,7 @@ interface Game {
   image: string;
   platforms: string[];
   releaseStatus: string;
+  href?: string;
 }
 
 interface FilamentCardProps {
@@ -29,39 +31,52 @@ export default function FilamentCard({ game }: FilamentCardProps) {
   };
 
   return (
-    <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-blue-500/20 flex flex-col h-full">
+    <div className="flex h-full flex-col overflow-hidden rounded-lg bg-white/5 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:transform hover:shadow-blue-500/20">
       <div className="relative h-48 overflow-hidden">
-        <Image 
-          src={game.image} 
+        <Image
+          src={game.image}
           alt={game.title}
           width={800}
           height={450}
-          className="w-full h-full object-cover"
+          className={`h-full w-full object-cover ${game.ident === "bloodsigil" ? "object-[center_50%]" : ""}`}
           priority
         />
-        <div className={`absolute top-2 right-2 ${getStatusColor(game.releaseStatus)} text-white text-xs px-2 py-1 rounded z-10`}>
+        <div
+          className={`absolute right-2 top-2 ${getStatusColor(game.releaseStatus)} z-10 rounded px-2 py-1 text-xs text-white`}
+        >
           {game.releaseStatus}
         </div>
       </div>
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold text-white mb-2">{game.title}</h3>
-        <p className="text-gray-300 mb-4 flex-grow">{game.description}</p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {game.platforms.map(platform => (
-            <span 
-              key={platform} 
-              className="bg-gray-800 text-gray-300 px-2 py-1 text-xs rounded"
+      <div className="flex flex-grow flex-col p-6">
+        <h3 className="mb-2 text-xl font-bold text-white">{game.title}</h3>
+        <p className="mb-4 flex-grow text-gray-300">{game.description}</p>
+        <div className="mb-4 flex flex-wrap gap-2">
+          {game.platforms.map((platform) => (
+            <span
+              key={platform}
+              className="rounded bg-gray-800 px-2 py-1 text-xs text-gray-300"
             >
               {platform}
             </span>
           ))}
         </div>
-        <a 
-          href={`https://sbox.game/fss/${game.ident}`} 
-          className="inline-block w-full text-center bg-transparent border border-blue-500 hover:bg-blue-500 text-blue-400 hover:text-white px-4 py-2 rounded transition-colors"
-        >
-          Learn More
-        </a>
+        {game.href ? (
+          <Link
+            href={game.href}
+            className="inline-block w-full rounded border border-blue-500 bg-transparent px-4 py-2 text-center text-blue-400 transition-colors hover:bg-blue-500 hover:text-white"
+          >
+            Learn More
+          </Link>
+        ) : (
+          <a
+            href={`https://sbox.game/fss/${game.ident}`}
+            className="inline-block w-full rounded border border-blue-500 bg-transparent px-4 py-2 text-center text-blue-400 transition-colors hover:bg-blue-500 hover:text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn More
+          </a>
+        )}
       </div>
     </div>
   );
