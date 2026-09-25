@@ -1,7 +1,10 @@
 @import "./video-background.css";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme inline {
+  --font-montserrat: var(--font-montserrat);
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
 
 /* Make sure Montserrat applies to all text by default */
 @layer base {
