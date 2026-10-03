@@ -507,8 +507,7 @@ export default function BloodsigilPage() {
                 Bloodsigil
               </h3>
               <p className="mb-3 text-center text-gray-300">
-                An origin ArcaneYou are a causal agent, discover what happened
-                in a research facility. sigil. The Chaos fields imbue this
+                An origin Arcane sigil. The Chaos fields imbue this
                 crystal with otherworldly powers. Survivors near it feel
                 threatened.
               </p>
