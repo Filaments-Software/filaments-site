@@ -291,14 +291,6 @@ export default function AboutPage() {
                   avatarScale: 1,
                 },
                 {
-                  name: "Lilly",
-                  role: "3D Artist / Tester",
-                  image: "/images/team-9.png",
-                  bio: ":)",
-                  roundedAvatar: true,
-                  avatarScale: 1,
-                },
-                {
                   name: "Becriv",
                   role: "Mapper / Level Designer",
                   image: "/images/team-11.png",
